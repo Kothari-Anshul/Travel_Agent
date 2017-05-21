@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<title>Travel_Agent
+		</title>
+		 <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+		<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald|Ubuntu" rel="stylesheet">
+		<link rel="stylesheet" href="css/custom.css">
+		<script>
+		function myfunction(){
+			
+			document.getElementById("signup").style.display="block";
+			
+			
+			
+		}
+		function myclose(){
+			document.getElementById("signup").style.display="none";
+		}
+		function myfunc(){
+			document.getElementById("hov").setAttribute("type","date");
+			document.getElementById("hover").setAttribute("type","date");
+		}
+		function login(){
+			document.getElementById("signup").style.display="none";
+			document.getElementById("login").style.display="block";
+		}
+		function mclogin(){
+			document.getElementById("login").style.display = "none";
+		}
+		function mchelp(){
+			document.getElementById("help").style.display = "none";
+		}
+		function mohelp(){
+			document.getElementById("help").style.display = "block";
+		}
+		</script>
+		<style>
+		
+			.row span{
+				color:black;
+				font-size:15px;
+			}
+			#signup h1, #login h1{
+				color:black;
+				font-family: 'Ubuntu', sans-serif;
+			}
+			#signup input, #login input{
+				font-size:15px;
+			}
+		</style>
+	</head>
+	<body>
+	<form action="" method="post">
+		<div id="signup" style="position:fixed; margin-top:25px; border-radius:2px; z-index:99; top:5vw;padding:2vw;background-color:white;  box-shadow: 10px 10px 5px #e0e0d1 ; display:none;">
+			<span style="cursor:pointer; float:right; font-size:25px;" onclick="myclose()">x</span><br><br>
+			<h1 style="text-align:center; " >Sign Up For Free</h1>
+			<br><br>
+			<div class="row" >
+				
+				<div class="col-md-6">
+					<span>User Name</span>
+				</div>
+				<div class="col-md-6">
+					<input name = "name" type="text" style="width:100%;">
+				</div>
+			
+				
+				
+			</div>
+			
+			<div class="row">
+				
+				<div class="col-md-6">
+					<span>E-mail</span>
+				</div>
+				<div class="col-md-6">
+					<input name = "email" type="text" style="width:100%;">
+				</div>
+			
+				
+				
+			</div>
+			
+			<div class="row">
+				
+				<div class="col-md-6">
+					<span>Mobile</span>
+				</div>
+				<div class="col-md-6">
+					<input name = "mobile" type="text" style="width:100%;">
+				</div>
+			
+				
+				
+			</div>
+			
+			<div class="row">
+				
+				<div class="col-md-6">
+					<span>Country</span>
+				</div>
+				<div class="col-md-6">
+					<input name = "country" type="text" style="width:100%;">
+				</div>
+			
+				
+				
+			</div>
+			<div class="row">
+				
+				<div class="col-md-6">
+					<span>Password</span>
+				</div>
+				<div class="col-md-6">
+					<input name = "password" type="text" style="width:100%;">
+				</div>
+			
+				
+				
+			</div>
+	</form>
+	
+		
+	
+		
+		<div class="row">
+			<div class="col-md-4">
+			</div>
+			<div class="col-md-4">
+				<button style="color:white; font-size:20px; font-weight:bold; background-color:#006699 ; border:0px; margin-left:25px; border-radius:2px; padding:10px;">Sign Up</button><br><br>
+			</div>
+		
+			<div class="col-md-4">
+			</div>
+			<br><br>
+		</div>
+				
+		
+	</div>
+	<form method="post" action="php/new_php.php">
+		<div id="login" style="position:fixed; overflow:auto;border-radius:2px; margin-top:50px;z-index:99; top:5vw; padding:2vw; background-color:white;  box-shadow: 10px 10px 5px #e0e0d1 ; display:none;">
+			<span style="cursor:pointer; float:right; font-size:25px;" onclick="mclogin()">x</span><br><br>
+			<h1 style="text-align:center;" >LogIn</h1>
+			<br><br>
+			<div class="row" >
+				
+				<div class="col-md-6">
+					<span>User Name</span>
+				</div>
+				<div class="col-md-6">
+					<input type="text"  name ="name" style="width:100%;">
+				</div>
+			
+				
+				
+			</div>
+		
+			<div class="row">
+				
+				<div class="col-md-6">
+					<span>Password</span>
+				</div>
+				<div class="col-md-6">
+					<input type="text"  name ="password" style="width:100%;">
+				</div>
+			
+				
+				
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-md-4">
+				</div>
+				<div class="col-md-4">
+					<button style="color:white; font-size:20px; font-weight:bold; background-color:#006699 ; border:0px; margin-left:35px; border-radius:2px; padding:10px;">Log In</button><br><br>
+				</div>
+			
+				<div class="col-md-4">
+				</div>
+				<br><br>
+			</div>
+				
+			
+		</div>
+		
+			
+			<div id="help" style="position:fixed; width:20%;padding:80px 10px 10px 10px; z-index:88;height:100%; right:5px; overflow:auto; border-radius:2px; display:none;background-color:white;  box-shadow: 10px 10px 5px #e0e0d1;">
+				<span style="font-size:25px;  margin:30px;">Travel Agent</span>
+				<span style="float:right; cursor:pointer;" onclick="mchelp()">X</span><br><br>
+				<div class="row" style="background-color:#ebebe0; padding:15px 10px 15px 10px; margin-bottom:20px;">
+					<div class="col-md-12">
+						<input type="text" style="font-size:15px; width:100%;padding:5px; border-radius:10px;" name = "keyword" placeholder = "Search your question here?">
+					</div>
+				</div>
+				<h4 style=" font-size:10px;text-align:left; text-transform:uppercase; font-weight:bold;color:#767676;margin-left:10px;">Suggested Articles</h4>
+				<div class="row">
+					<div class="col-md-12">
+						<p><a>Getting Started</a></p>
+						<p><a>I am a hos.How do I make change to confirmed reservation</a></p>
+						<p><a>How is the price determined for reservation</a></p>
+						<p><a>What is Travel Agent cancellation policy</a></p>
+						<p><a>How does Travel Agent handles security deposits</a></p>
+					</div>
+				</div>
+				
+			</div>
+			
+			<div style="clear:float;">
+			</div>
+	
+			<nav id="myNavbar" class="navbar navbar-default navbar-fixed-top"  style=" 	font-family: 'Ubuntu', sans-serif; color:#006699;" role="navigation">
+			<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="container-fluid" style="padding:0px;>
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						   
+						</div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse ul" id="navbarCollapse">
+							<ul class="nav navbar-nav " style="font-size:25px;">
+								<li ><a href="#home" style="padding:0px; margin:0px; color:#006699;" ><img src="logo.jpg" style="width:130px; height:55px; padding:0px; margin:0px;"/></a></li>
+								<li><input type="text" placeholder="Where to ?" style="width:55vw; border-left:1px solid #dce0e0; border:0px; color:#484848; padding:0px 0px 0px 15px;border-radius:2px; font-size:15px; height:55px;"/></li>
+								<li><button class="input" style="margin:18px 20px 18px 20px; color:#484848; border:1px solid #aaa; border-radius:2px;font-size:15px; padding:0px 10px 0px 10px; height:20px;">Become Host</button></li>
+								<li><a href="#" style="margin:18px 20px 18px 20px;color:#484848;font-family: 'Ubuntu', sans-serif; font-size:15px; padding:0px 10px 0px 10px; height:20px;border-left:1px solid #dce0e0;" onclick="mohelp()">Help</a></li>
+								<li><a href="#" style="margin:18px 20px 18px 20px;color:#484848;color:#484848 ; font-family: 'Ubuntu', sans-serif;font-size:15px; padding:0px 10px 0px 10px; height:20px; border-left:1px solid #dce0e0;" onclick="myfunction()">Sign Up</a></li>
+								<li><a href="#" style="margin:18px 20px 18px 20px; color:#484848;font-size:15px; font-family: 'Ubuntu', sans-serif; padding:0px 10px 0px 10px; height:20px; border-left:1px solid #dce0e0;" onclick ="login()">Login</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+		
+		
+			<div  id="pic" class="container-fluid" style="position:relative;">
+  <h1 style="position:absolute; font-size:4vw; top:15vw; width:100%; text-align:center; color:white; z-index:5;"> LIVE THERE</h1>
+  <h3 style="position:absolute; font-size:2.5vw;top:22vw; width:100%; text-align:center; color:white; z-index:5;"> Sutiable Place For You</h3>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" style="position:relative; z-index:2">
+    <!-- Indicators -->
+		<ol class="carousel-indicators" style="margin-bottom:100px;">
+		  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		  <li data-target="#myCarousel" data-slide-to="1"></li>
+		  <li data-target="#myCarousel" data-slide-to="2"></li>
+		  <li data-target="#myCarousel" data-slide-to="3"></li>
+		</ol>
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner" role="listbox" >
+		  <div class="item active" style="height:45vw;">
+			<img src="front.jpg" alt="Chania" width="100%">
+		  </div>
+		  <div class="item" style="height:45vw;">
+			<img src="caro1.jpg" alt="Chania" width="100%">
+		  </div>
+		  <div class="item" style="height:45vw;">
+			<img src="caro2.jpg" alt="Chania" width="100%">
+		  </div>
+		  <div class="item" style="height:45vw;">
+			<img src="caro3.jpg" alt="Chania" width="100%">
+		  </div>
+		  
+		
+			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" ></span>
+				
+			</a>
+			 <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				
+			</a>
+	
+ 
+		</div>
+	</div>
+</div>
+			<div class="container-fluid center">
+				
+					<h3 style="margin-top:50px; margin-bottom:50px; width:100%; font-weight:bold;">Search Over 2 million homes in 190+ Countries</h3>
+					<div class="row">
+						<div class="col-md-2 incenter">
+							<input class="input"type="text" style="width:100%;" placeholder="where to"/>
+						</div>
+						<div class="col-md-4 incenter" >
+							<input class="input" type="text"  id="hov" onclick="myfunc()" style="width:100%;" placeholder="Check In -->"/>
+						</div>
+						<div class="col-md-2 incenter">
+							<input class="input"  type="text"  id="hover" onclick="myfunc()" style="width:100%;" placeholder="Check Out"/>
+						</div>
+						<div class="col-md-2 incenter" >
+							<select class="input" style="width:100%; text-align:center;">
+							<option>Guest 1</option>
+							<option>Guest 2</option>
+							<option>Guest 3</option>
+							<option>Guest 4</option>
+							<option>Guest 5</option>
+							
+						</select>
+						</div>
+						<div class="col-md-2 incenter">
+							<button class="input" style="width:100%;background-color:#ff6666; color:white; font-weight:bold; border-radius:1px; border:0px;">Search</button>
+							
+						</div>
+					</div>
+					<h3 style="margin-bottom:50px; margin-top:50px; font-weight:bold;">Top Destinations</h3>
+					<div  class = "dest" class="row">
+						<div class="col-md-6" style="position:relative;  padding-left:0px;">
+								<a><img class = "img" src="1.jpg" style="width:100%; height:63vh;" /></a>
+								<h4 style="position:absolute ; width:100%; color:white;bottom:2vh; text-align:center;"><a>Mumbai</a></h4>
+						</div>
+						<div class="col-md-6">
+								<div class="row">
+									<div class="col-md-6" style="position:relative; ">
+										<a><img class = "img" src="2.jpg" /></a>
+										<h4 style="position:absolute ; width:100%; color:white;bottom:2vh; text-align:center;"><a>Rio De Janerio </a></h4>
+									
+									</div>
+									<div class="col-md-6" style="padding-right:0px;position:relative; ">
+										<a><img class = "img" src="3.jpg" /></a>
+										<h4 style="position:absolute ; width:100%; color:white;bottom:2vh; text-align:center;"><a>Dubai</a></h4>
+										
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6" style="position:relative; ">
+										<a><img class = "img" src="4.jpg" /></a>
+										<h4 style="position:absolute ; width:100%; color:white;bottom:2vh; text-align:center;"><a>Bali</a></h4>
+										
+									</div>
+									<div class="col-md-6" style="padding-right:0px; position:relative; ">
+										<a><img class = "img" src="5.jpg" /></a>
+										<h4 style="position:absolute ; width:100%; color:white;bottom:2vh; text-align:center;"><a>Sydney</a></h4>
+										
+									</div>
+								</div>
+							
+						</div>
+					</div>
+					<div class="row dest">
+						<div class="col-md-3">
+							<div class="row">
+								<div class="colo-md-12" style="position:relative; ">
+									<a><img class = "img" src="6.jpg" /></a>
+								<h4 style="position:absolute ; width:100%; color:white;bottom:2vh; text-align:center;"><a>London</a></h4>
+								</div>
+							</div>
+							<div class="row">
+								<div class="colo-md-12" style="position:relative; ">
+									<a><img class = "img" src="7.jpg" /></a>
+									<h4 style="position:absolute ; width:100%; color:white;bottom:2vh; text-align:center;"><a>Bangkok</a></h4>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6" style="position:relative;" >
+							<a><img class = "img" src="8.jpg" style="height:63vh;" /></a>
+							<h4 style="position:absolute ; width:100%; color:white;bottom:2vh; text-align:center;"><a>Delhi</a></h4>
+						</div>
+						<div class="col-md-3">
+							<div class="row">
+								<div class="colo-md-12" style="position:relative; ">
+									<a><img class = "img" src="9.jpg" /></a>
+									<h4 style="position:absolute ; width:100%; color:white;bottom:2vh; text-align:center;"><a>Rome</a></h4>
+								</div>
+							</div>
+							<div class="row">
+								<div class="colo-md-12" style="position:relative; ">
+									<a><img class = "img" src="10.jpg" /></a>
+									<h4 style="position:absolute ; width:100%; color:white;bottom:2vh; text-align:center;"><a>Singapore</a></h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row" style="margin:50px 0px 50px 0px;">
+						<div class="col-md-4">
+							<a><img src="p.png" style="width:50px;  margin-right:10px; height:50px; float:left;"/></a>
+							<div style="width:180px; float:left;">
+								<h5>24/7 customer support</h5>
+								<p>If you need help while traveling or hosting, contact us at our toll free number: 00 08004405103</p>
+							
+							</div>
+						</div>
+						<div class="col-md-4">
+							<a><img src="g.png" style="width:50px;  margin-right:10px; height:50px; float:left;"/></a>
+							<div style="width:180px; float:left;">
+								<h5>₹6,00,00,000 host guarantee</h5>
+								<p>Hosts are protected against property damages for up to ₹6,00,00,000.</p>
+							
+							</div>
+						</div>
+						<div class="col-md-4" style="padding-right:0px;padding-left">
+							<a><img src="v.jpg" style="width:50px;  margin-right:10px; height:50px; float:left;"/></a>
+							<div style="width:200px; float:left;">
+								<h5>Verified ID</h5>
+								<p>We aim to build a trusted community by giving you more info when you're deciding who to host or stay with.</p>
+							
+							</div>
+						</div>
+					</div>
+					
+			</div>
+			<div  id="lower" class="conatiner-fluid" style="padding:100px; background-color:#2b2d2e;">
+				<div class="row">
+					<div class="col-md-6">
+						<select style="font-size:25px;border-radius:1px;display:block;border:0px; margin:auto;background-color:#484848; color:white; margin-top:20px; margin-bottom:20px;">
+						<option selected="selected" style="font-size:20px; font-family:'Montserrat', sans-serif;">English</option>
+						<option style="font-size:20px; font-family:'Montserrat', sans-serif;">German</option>
+						<option style="font-size:20px; font-family:'Montserrat', sans-serif;">France</option>
+						<option style="font-size:20px; font-family:'Montserrat', sans-serif;">Portuguese</option>
+						</select>
+						<select style="font-size:25px;display:block;border-radius:1px; border:0px;margin:auto; background-color:#484848; color:white; margin-bottom:20px;">
+						<option style="font-size:20px; font-family:'Montserrat', sans-serif;">India</option>
+						<option style="font-size:20px; font-family:'Montserrat', sans-serif;">United States</option>
+						<option style="font-size:20px; font-family:'Montserrat', sans-serif;">Germany</option>
+						<option style="font-size:20px; font-family:'Montserrat', sans-serif;">United Kingdom</option>
+						</select>
+					
+					</div>
+					<div class="col-md-2">
+						<h4 style="margin-top:20px; margin-bottom:20px; color:white;">Company</h4>
+						<ul style="list-style-type:none; font-size:15px;">
+							<li>About</li>
+							<li>Career</li>
+							<li>Press</li>
+							<li>Blog</li>
+						</ul>
+					</div>
+					<div class="col-md-2">
+						<h4 style="margin-top:20px; margin-bottom:20px; color:white;">Discover</h4>
+						<ul style="list-style-type:none; font-size:15px;">
+							<li>Trust & Safety</li>
+							<li>Business Travel</li>
+							<li>Mobile</li>
+							<li>Site Map</li>
+						</ul>
+					</div>
+					<div class="col-md-2">
+						<h4 style="margin-top:20px; margin-bottom:20px; color:white;">Hosting</h4>
+						<ul style="list-style-type:none; font-size:15px;">
+							<li>Why Host</li>
+							<li>Hospitality</li>
+							<li>Instant Book</li>
+							
+						</ul>
+					</div>
+				</div>
+				<hr style="border:1px solid white;"/>
+				<h3 style="color:white; text-align:center;">Join Us On</h3>
+				<div class="row">
+					<div class="col-md-3">
+					</div>
+					<div id="icon" class="col-md-6">
+						
+					<a href="#"><img src="fa.png" style="height:20px; margin:10px; width:20px;"></a>
+					<a href="#"><img src="yt.png" style="height:20px; margin:10px;width:20px;"></a>
+					<a href="#"><img src="tw.png" style="height:20px;margin:10px; width:20px;"></a>
+					<a href="#"><img src="ins.png" style="height:20px; margin:10px;width:20px;"></a>
+					<a href="#"><img src="goop.png" style="height:20px;margin:10px; width:20px;"></a>
+					</div>
+					<div class="col-md-3">
+					</div>
+					
+				</div>
+				<h3 style="color:white; text-align:center;">Travel Smart &copy 2016</h3>
+				
+				
+				
+			</div>
+	</body>
+	<script>
+		
+	</script>
+	
+</html>
